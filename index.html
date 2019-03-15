@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Break Time </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<h1 id="timer">01 : 30 : 00</h1>
+	<div>
+		<button id="toggle">Start</button>
+		<button id="reset">Reset</button>
+	</div>
+
+	<table id="breaks-list-table">
+		<caption id="details">
+			<span class="head-details" id="today-date">
+				<label for="today">Date:</label>
+				<input type="date" id="datepicker"
+					   name="today" value=""/>
+				</span>
+			<span class="head-details"></span>
+			<span class="head-details" id="remaining">Remaining: 01:30</span>
+
+
+		</caption>
+		<thead>
+			<tr>
+				<th rowspan="2">Break Out</th>
+				<th rowspan="2">Break In</th>
+				<th>Consume<br /> hrs : mins : secs</th>
+
+
+			</tr>
+			<tr>
+				<th id="consumetxt">00 : 00 : 00</th>
+			</tr>
+		</thead>
+		<tbody id="breaks-list">
+		</tbody>
+	</table>
+	<script src="js/stopwatch.js"></script>
+	<script src="js/record.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
